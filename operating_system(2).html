@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Types of OS</title>
+    </head>
+    <body>
+        <h2>Types of Operating System (OS)</h2>
+        <ul>
+            <li>An operating system is a well-organized collection of programs that manages the computer hardware.</li>
+            <li>It is a type of system software that is responsible for the smooth functioning of the computer system.</li>
+        </ul>
+        <img src="types-of-operating-system.png">
+        <h2>1. Batch Operating System</h2>
+        <ul>
+            <li>In the 1970s, Batch processing was very popular. In this technique, similar types of jobs were batched together and executed in time. People were used to having a single computer which was called a mainframe.</li>
+            <li>In Batch operating system, access is given to more than one person; they submit their respective jobs to the system for the execution.</li>
+            <li>The system put all of the jobs in a queue on the basis of first come first serve and then executes the jobs one by one. The users collect their respective output when all the jobs get executed.</li>
+            <img src="batch-operating-system_1.png">
+            <li>The purpose of this operating system was mainly to transfer control from one job to another as soon as the job was completed. It contained a small set of programs called the resident monitor that always resided in one part of the main memory. The remaining part is used for servicing jobs.</li>
+            <img src="batch-operating-system2.png">
+        </ul>
+        <h3>Advantages of Batch OS</h3>
+        <ul>
+            <li>The use of a resident monitor improves computer efficiency as it eliminates CPU time between two jobs.</li>
+        </ul>
+        <h3>Disadvantages of Batch OS</h3>
+        <ol>
+            <b><li>Starvation</li></b>
+            <ul>
+                <li>Batch processing suffers from starvation.</li>
+                <li><b>For Example:</b></li>
+                <img src="batch-operating-system.png">
+                <li>There are five jobs J1, J2, J3, J4, and J5, present in the batch. If the execution time of J1 is very high, then the other four jobs will never be executed, or they will have to wait for a very long time. Hence the other processes get starved.</li>
+            </ul>
+            <b><li>Not Interactive</li></b>
+            <ul>
+                <li>Batch Processing is not suitable for jobs that are dependent on the user's input. If a job requires the input of two numbers from the console, then it will never get it in the batch processing scenario since the user is not present at the time of execution.</li>
+            </ul>
+        </ol>
+        <h2>2. Multiprogramming Operating System</h2>
+        <ul>
+            <li>Multiprogramming is an extension to batch processing where the CPU is always kept busy. Each process needs two types of system time: CPU time and IO time.</li>
+            <li>In a multiprogramming environment, when a process does its I/O, The CPU can start the execution of other processes. Therefore, multiprogramming improves the efficiency of the system</li>
+            <img src="multiprogramming-operating-system.png">
+        </ul>
+        <h3>Advantages of Multiprogramming OS</h3>
+        <ul>
+            <li>Throughout the system, it increased as the CPU always had one program to execute</li>
+            <li>Response time can also be reduced.</li>
+        </ul>
+        <h3>Disadvantages of Multiprogramming OS</h3>
+        <ul>
+            <li>Multiprogramming systems provide an environment in which various systems resources are used efficiently, but they do not provide any user interaction with the computer system.</li>
+        </ul>
+        <h2>3. Multiprocessing Operating System</h2>
+        <ul>
+            <li>In Multiprocessing, Parallel computing is achieved. There are more than one processors present in the system which can execute more than one process at the same time. This will increase the throughput of the system</li>
+            <img src="multiprocessing-operating-system.png">
+            <li>In Multiprocessing, Parallel computing is achieved. More than one processor present in the system can execute more than one process simultaneously, which will increase the throughput of the system.</li>
+            <img src="multiprocessing-operating-system2.png">
+        </ul>
+        <h3>Advantages of Multiprocessing operating system:</h3>
+        <ul>
+            <li><b>Increased reliability:</b> Due to the multiprocessing system, processing tasks can be distributed among several processors. This increases reliability as if one processor fails, the task can be given to another processor for completion.</li>
+            <li><b>Increased throughout:</b> As several processors increase, more work can be done in less.</li>
+        </ul>
+        <h3>Disadvantages of Multiprocessing operating System</h3>
+        <ul>
+            <li>Multiprocessing operating system is more complex and sophisticated as it takes care of multiple CPUs simultaneously.</li>
+        </ul>
+        <h2>4. Multitasking Operating System</h2>
+        <ul>
+            <img src="multitasking-operating-system.png">
+            <li>The multitasking operating system is a logical extension of a multiprogramming system that enables multiple programs simultaneously. It allows a user to perform more than one computer task at the same time.</li>
+            <img src="multitasking-operating-system2.png">
+        </ul>
+        <h3>Advantages of Multitasking operating system</h3>
+        <ul>
+            <li>This operating system is more suited to supporting multiple users simultaneously.</li>
+            <li>The multitasking operating systems have well-defined memory management.</li>
+        </ul>
+        <h3>Disadvantages of Multitasking operating system</h3>
+        <ul>
+            <li>The multiple processors are busier at the same time to complete any task in a multitasking environment, so the CPU generates more heat.</li>
+        </ul>
+        <h2>5. Network Operating System</h2>
+        <ul>
+            <img src="network-operating-system.png">
+            <li>An Operating system, which includes software and associated protocols to communicate with other computers via a network conveniently and cost-effectively, is called Network Operating System.</li>
+            <img src="network-operating-system2.png">
+        </ul>
+        <h3>Advantages of Network Operating System</h3>
+        <ul>
+            <li>In this type of operating system, network traffic reduces due to the division between clients and the server.</li>
+            <li>This type of system is less expensive to set up and maintain.</li>
+        </ul>
+        <h3>Disadvantages of Network Operating System</h3>
+        <ul>
+            <li>In this type of operating system, the failure of any node in a system affects the whole system.</li>
+            <li>Security and performance are important issues. So trained network administrators are required for network administration.</li>
+        </ul>
+        <h2>6. Real Time Operating System</h2>
+        <ul>
+            <li>In Real-Time Systems, each job carries a certain deadline within which the job is supposed to be completed, otherwise, the huge loss will be there, or even if the result is produced, it will be completely useless.</li>
+            <img src="real-time-operating-system.png">
+            <li>The Application of a Real-Time system exists in the case of military applications, if you want to drop a missile, then the missile is supposed to be dropped with a certain precision.</li>
+            <img src="real-time-operating-system2.png">
+        </ul>
+        <h3>Advantages of Real-time operating system:</h3>
+        <ul>
+            <li>Easy to layout, develop and execute real-time applications under the real-time operating system.</li>
+            <li>In a Real-time operating system, the maximum utilization of devices and systems.</li>
+        </ul>
+        <h3>Disadvantages of Real-time operating system:</h3>
+        <ul>
+            <li>Real-time operating systems are very costly to develop.</li>
+            <li>Real-time operating systems are very complex and can consume critical CPU cycles.</li>
+        </ul>
+        <h2>7. Time-Sharing Operating System</h2>
+        <ul>
+            <li>In the Time Sharing operating system, computer resources are allocated in a time-dependent fashion to several programs simultaneously. Thus it helps to provide a large number of user's direct access to the main computer. It is a logical extension of multiprogramming. In time-sharing, the CPU is switched among multiple programs given by different users on a scheduled basis.</li>
+            <img src="time-sharing-operating-system.png">
+            <li>A time-sharing operating system allows many users to be served simultaneously, so sophisticated CPU scheduling schemes and Input/output management are required.</li>
+            <li>Time-sharing operating systems are very difficult and expensive to build.</li>
+        </ul>
+        <h3>Advantages of Time Sharing Operating System</h3>
+        <ul>
+            <li>The time-sharing operating system provides effective utilization and sharing of resources.</li>
+            <li>This system reduces CPU idle and response time.</li>
+        </ul>
+        <h3>Disadvantages of Time Sharing Operating System</h3>
+        <ul>
+            <li>Data transmission rates are very high in comparison to other methods.</li>
+            <li>Security and integrity of user programs loaded in memory and data need to be maintained as many users access the system at the same time.</li>
+        </ul>
+        <h2>8. Distributed Operating System</h2>
+        <ul>
+            <li>The Distributed Operating system is not installed on a single machine, it is divided into parts, and these parts are loaded on different machines. A part of the distributed Operating system is installed on each machine to make their communication possible. Distributed Operating systems are much more complex, large, and sophisticated than Network operating systems because they also have to take care of varying networking protocols.</li>
+            <img src="time-sharing-operating-system2.png">
+        </ul>
+        <h3>Advantages of Distributed Operating System</h3>
+        <ul>
+            <li>The distributed operating system provides sharing of resources.</li>
+            <li>This type of system is fault-tolerant.</li>
+        </ul>
+        <h3>Disadvantages of Distributed Operating System</h3>
+        <ul>
+            <li>Protocol overhead can dominate computation cost.</li>
+        </ul>
+    </body>
+</html>
