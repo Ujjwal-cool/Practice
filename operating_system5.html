@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Process States</title>
+    <style>
+
+        body {
+            font-family: "Helvetica", Sans-Serif;
+            width: 1000px;
+            margin-left: 18%;
+            margin-right: 10%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+
+        h2 {
+            color: purple;
+        }
+
+        h3{
+            color: darkblue;
+        }
+
+
+        .sidebar {
+          margin-left: -17%;
+          padding: 0;
+          width: 200px;
+          background-color: #f1f1f1;
+          position: fixed;
+          height: 90%;
+          overflow: auto;
+        }
+        
+        .sidebar a {
+          display: block;
+          color: black;
+          padding: 16px;
+          text-decoration: none;
+        }
+        
+        
+        .sidebar a:hover {
+          background-color: rgb(138, 206, 233);
+          color: white;
+        }
+        
+        div.cont {
+          margin-left: 25%;
+          width:50%
+        }
+        
+        
+    </style>
+</head>
+    <div class="sidebar">
+        <a class="active" href="index.html">1. Operating System Tutorial</a>
+        <a href="operating_system(2).html">2. Types of Operating System</a>
+        <a href="operating_system3.html">3. Process Management in OS</a>
+        <a href="operating_system4.html">4. Attributes of a process</a>
+        <a href="operating_system5.html">5. Process States</a>
+      </div>
+    <h2>Process States</h2>
+    <ul>
+        <img src="os-process-state-diagram.jpg">
+        <li>The process, from its creation to completion, passes through various states. The minimum number of states is five.</li>
+        <li>The names of the states are not standardized although the process may be in one of the following states during execution.</li>
+    </ul>
+    <ol>
+        <li><h3>New</h3></li>
+        <ul>
+            <li>A program which is going to be picked up by the OS into the main memory is called a new process.</li>
+        </ul>
+        <li><h3>Ready</h3></li>
+        <ul>
+            <li>Whenever a process is created, it directly enters in the ready state, in which, it waits for the CPU to be assigned. The OS picks the new processes from the secondary memory and put all of them in the main memory</li>
+            <li>The processes which are ready for the execution and reside in the main memory are called ready state processes. There can be many processes present in the ready state.</li>
+        </ul>
+        <li><h3>Running</h3></li>
+        <ul>
+            <li>One of the processes from the ready state will be chosen by the OS depending upon the scheduling algorithm. Hence, if we have only one CPU in our system, the number of running processes for a particular time will always be one. If we have n processors in the system then we can have n processes running simultaneously.</li>
+        </ul>
+        <li><h3>Block or wait</h3></li>
+        <ul>
+            <li>From the Running state, a process can make the transition to the block or wait state depending upon the scheduling algorithm or the intrinsic behavior of the process.</li>
+            <li>When a process waits for a certain resource to be assigned or for the input from the user then the OS move this process to the block or wait state and assigns the CPU to the other processes.</li>
+        </ul>
+        <li><h3>Completion or termination</h3></li>
+        <ul>
+            <li>When a process finishes its execution, it comes in the termination state. All the context of the process (Process Control Block) will also be deleted the process will be terminated by the Operating system.</li>
+        </ul>
+        <li><h3>Suspend ready</h3></li>
+        <ul>
+            <li>A process in the ready state, which is moved to secondary memory from the main memory due to lack of the resources (mainly primary memory) is called in the suspend ready state.</li>
+            <li>If the main memory is full and a higher priority process comes for the execution then the OS have to make the room for the process in the main memory by throwing the lower priority process out into the secondary memory. The suspend ready processes remain in the secondary memory until the main memory gets available.</li>
+        </ul>
+        <li><h3>Suspend wait</h3></li>
+        <ul>
+            <li>Instead of removing the process from the ready queue, it's better to remove the blocked process which is waiting for some resources in the main memory. Since it is already waiting for some resource to get available hence it is better if it waits in the secondary memory and make room for the higher priority process. These processes complete their execution once the main memory gets available and their wait is finished.</li>
+        </ul>
+    </ol>
+    <h2>Operations on the Process</h2>
+    <ol>
+        <li><h3>Creation</h3></li>
+        <ul>
+            <li>Once the process is created, it will be ready and come into the ready queue (main memory) and will be ready for the execution.</li>
+        </ul>
+        <li><h3>Scheduling</h3></li>
+        <ul>
+            <li>Out of the many processes present in the ready queue, the Operating system chooses one process and start executing it. Selecting the process which is to be executed next, is known as scheduling.</li>
+        </ul>
+        <li><h3>Execution</h3></li>
+        <ul>
+            <li>Once the process is scheduled for the execution, the processor starts executing it. Process may come to the blocked or wait state during the execution then in that case the processor starts executing the other processes.</li>
+        </ul>
+        <li><h3>Deletion/killing</h3></li>
+        <ul>
+            <li>Once the purpose of the process gets over then the OS will kill the process. The Context of the process (PCB) will be deleted and the process gets terminated by the Operating system.</li>
+        </ul>
+    </ol>
+    <h2><a href="operating_system5.html">Next Page</a></h2>
+</body>
+</html>
